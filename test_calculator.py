@@ -46,7 +46,9 @@ class TestCalculator(unittest.TestCase):
               log(5,0)
     
     def test_hypotenuse(self): # 3 assertions
-        with self.assertEqual(
+        with self.assertEqual(hypotenuse(3,4),5)
+        with self.assertEqaul(hypotenuse(5,12),13)
+        with self.assertEqual(hypotenuse(8,15),17)
     
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
