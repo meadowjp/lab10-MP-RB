@@ -10,22 +10,20 @@ def add(a, b):
 def subtract(a, b):
     return a-b
     
-def mul(a,b):
+def mult(a,b):
     return a*b
     
 def div(a, b):
     try:
-        b/a
+        return a/b
     except ZeroDivisionError:
         return "Division error"
-    return b/a
     
 def logarithm(a,b):
     try:
-        math.log(a,b)
+        return math.log(a,b)
     except ValueError:
         return "Value error"
-    return math.log(a,b)
     
 def exp(a,b):
     return math.exp(a*b)
