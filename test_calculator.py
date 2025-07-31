@@ -1,5 +1,5 @@
 #https://github.com/meadowjp/lab10-MP-RB
-
+import math
 import unittest
 from calculator import *
 
@@ -13,17 +13,6 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(sub(5, 3), 2)
         self.assertEqual(sub(-1, -1), 0)
         self.assertEqual(sub(0, 5), -5)
-
-    
-    def test_multiply(self): 
-        self.assertEqual(mult(2,3), 6)
-        self.assertEqual(mult(3,5), 15)
-        self.assertEqual(mult(-1,3), -3)
-
-    def test_divide(self): 
-        self.assertEqual(div(2,4),2)
-        self.assertEqual(div(-3,9),-3)
-        self.assertEqual(div(2,6),3)
 
     def test_multiply(self): 
         self.assertEqual(mult(2,3), 6)
