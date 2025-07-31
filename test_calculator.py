@@ -23,9 +23,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mult(-1,3), -3)
 
     def test_divide(self): 
-        self.assertEqual(div(2,4),2)
-        self.assertEqual(div(-3,9),-3)
-        self.assertEqual(div(2,6),3)
+        self.assertEqual(div(4,2),2)
+        self.assertEqual(div(9,-3),-3)
+        self.assertEqual(div(6,2),3)
 
     def test_divide_by_zero(self):
         self.assertEqual(div(5, 0), "Division error")
@@ -44,7 +44,7 @@ class TestCalculator(unittest.TestCase):
     
     def test_hypotenuse(self): 
         self.assertEqual(hypotenuse(3,4),5)
-        self.assertEqaul(hypotenuse(5,12),13)
+        self.assertEqual(hypotenuse(5,12),13)
         self.assertEqual(hypotenuse(8,15),17)
     
     def test_sqrt(self): 
