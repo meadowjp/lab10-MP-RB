@@ -10,10 +10,10 @@ def add(a, b):
 def subtract(a, b):
     return a-b
     
-def multiply(a,b):
+def mul(a,b):
     return a*b
     
-def divide(a, b):
+def div(a, b):
     try:
         return a/b
     except ZeroDivisionError:
