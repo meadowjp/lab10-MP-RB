@@ -50,6 +50,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(square_root(-1), "Value error")
         self.assertEqual(square_root(0),0)
         self.assertEqual(square_root(16),4)
+        self.assertEqual(square_root(4),2)
+        self.assertEqual(square_root(9),3)
 
 if __name__ == "__main__":
     unittest.main()
