@@ -1,4 +1,7 @@
 #https://github.com/meadowjp/lab10-MP-RB
+# Partner 1: Meadow Parks
+# Partner 2: Richard Bennett
+
 import math
 import unittest
 from calculator import *
