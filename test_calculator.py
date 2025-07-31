@@ -47,9 +47,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(hypotenuse(8,15),17)
     
     def test_sqrt(self): 
-        self.assertEqual(sqrt(-1), "Value error")
-        self.assertEqual(sqrt(0),0)
-        self.assertEqual(sqrt(16),4)
+        self.assertEqual(square_root(-1), "Value error")
+        self.assertEqual(square_root(0),0)
+        self.assertEqual(square_root(16),4)
 
 if __name__ == "__main__":
     unittest.main()
