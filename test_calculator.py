@@ -40,17 +40,16 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
     #     # call log function inside, example:
-         self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
+        with self.assertRaises(ValueError):
+              log(5,0)
     #     fill in code
 
     def test_hypotenuse(self): # 3 assertions
     
-
-    # def test_sqrt(self): # 3 assertions
+    def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
+        with self.assertRaises(ValueError):
+            square_root(NUM)
     #     # Test basic function
     #     fill in code
     ##########################
