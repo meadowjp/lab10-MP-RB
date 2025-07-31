@@ -46,7 +46,25 @@ class TestCalculator(unittest.TestCase):
     def test_log_invalid_base(self):
         self.assertEqual(log(-5, 2), "Value error")
     
+<<<<<<< Updated upstream
     def test_log_invalid_argument(self): 
+=======
+
+    ######## Partner 2
+        def test_divide_by_zero(self):
+            self.assertEqual(div(5, 0), "Division error")
+
+        def test_logarithm(self):
+            self.assertAlmostEqual(log(8, 2), 3.0)
+            self.assertAlmostEqual(log(100, 10), 2.0)
+            self.assertAlmostEqual(log(math.e, math.e), 1.0)
+
+        def test_log_invalid_base(self):
+            self.assertEqual(log(-5, 2), "Value error")
+    
+    ######## Partner 1
+    def test_log_invalid_argument(self): # 1 assertion
+>>>>>>> Stashed changes
         with self.assertRaises(ValueError):
               log(5,0)
     
