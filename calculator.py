@@ -37,7 +37,7 @@ def square_root(a):
     try:
         result = math.sqrt(a)
     except ValueError:
-        return "Value Error"
+        return "Value error"
     return result
 
 
