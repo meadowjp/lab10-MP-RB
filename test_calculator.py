@@ -17,18 +17,18 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(-1, -1), 0)
         self.assertEqual(subtract(0, 5), -5)
 
-    def test_multiply(self): 
-        self.assertEqual(multiply(2,3), 6)
-        self.assertEqual(multiply(3,5), 15)
-        self.assertEqual(multiply(-1,3), -3)
+    def test_mul(self): 
+        self.assertEqual(mul(2,3), 6)
+        self.assertEqual(mul(3,5), 15)
+        self.assertEqual(mul(-1,3), -3)
 
     def test_divide(self): 
-        self.assertEqual(divide(4,2),2)
-        self.assertEqual(divide(9,-3),-3)
-        self.assertEqual(divide(6,2),3)
+        self.assertEqual(div(4,2),2)
+        self.assertEqual(div(9,-3),-3)
+        self.assertEqual(div(6,2),3)
 
     def test_divide_by_zero(self):
-        self.assertEqual(divide(5, 0), "Division error")
+        self.assertEqual(div(5, 0), "Division error")
 
     def test_logarithm(self):
         self.assertAlmostEqual(logarithm(8, 2), 3.0)
