@@ -1,10 +1,7 @@
 #https://github.com/meadowjp/lab10-MP-RB
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# Partner 1: Meadow Parks
+# Partner 2: Richard Bennett
 
-One function per operation, in order.
-"""
 import math
 # First example
 def add(a, b): 
