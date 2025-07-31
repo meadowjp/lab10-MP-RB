@@ -7,7 +7,7 @@ import math
 def add(a, b): 
     return a+b
     
-def sub(a, b):
+def subtract(a, b):
     return a-b
     
 def mul(a,b):
@@ -20,7 +20,7 @@ def div(a, b):
         return "Division error"
     return b/a
     
-def log(a,b):
+def logarithm(a,b):
     try:
         math.log(a,b)
     except ValueError:
@@ -30,5 +30,16 @@ def log(a,b):
 def exp(a,b):
     return math.exp(a*b)
 
+def hypotenuse(a,b):
+    sum = math.pow(a,2) + math.pow(b,2)
+    result = math.sqrt(sum)
+    return result
+
+def square_root(a):
+    try:
+        result = math.sqrt(a)
+    except ValueError:
+        return "Value Error"
+    return result
 
 
