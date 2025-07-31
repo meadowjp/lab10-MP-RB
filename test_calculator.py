@@ -50,7 +50,8 @@ class TestCalculator(unittest.TestCase):
     def test_sqrt(self): 
         with self.assertRaises(ValueError):
             square_root(-1)
- 
+        self.assertEqual(sqrt(4),2)
+        self.assertEqual(sqrt(16),4)
 
 if __name__ == "__main__":
     unittest.main()
