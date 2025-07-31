@@ -49,10 +49,10 @@ class TestCalculator(unittest.TestCase):
     def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
         with self.assertRaises(ValueError):
-            square_root(NUM)
+            square_root(-1)
     #     # Test basic function
     #     fill in code
-    ##########################
+    
 
 # Do not touch this
 if __name__ == "__main__":
